@@ -159,10 +159,5 @@ namespace OCUnion.Transfer.Model
         /// World Object Online GetWorldObjectUpdate()
         /// </summary>
         Response44WObjectUpdate,
-
-        Request200Tradeship = 200,
-        Response201Tradeship = 201,
-        Request202GetTradeship = 202,
-        Response203GetTradeship = 203,
     }
 }

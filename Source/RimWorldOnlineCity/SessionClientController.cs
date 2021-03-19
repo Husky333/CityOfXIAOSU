@@ -47,8 +47,6 @@ namespace RimWorldOnlineCity
 
         public static IClientFileChecker[] ClientFileCheckers { get; private set; }
 
-        public static ServerTradeship tradeship = null;
-
         /// <summary>
         /// Инициализация при старте игры. Как можно раньше
         /// </summary>
@@ -133,65 +131,9 @@ namespace RimWorldOnlineCity
 
                     if (firstRun)
                     {
-                        if (Find.CurrentMap != null)
-                        {
-                            List<PassingShip> passingShips = Find.CurrentMap.passingShipManager.passingShips;
-
-                            for (int i = 0; i < passingShips.Count; i++)
-                            {
-                                try
-                                {
-                                    if (passingShips[i] is ServerTradeship)
-                                    {
-                                        Loger.Log("Servertradeship departed");
-                                        passingShips[i].Depart();
-                                    }
-                                    else if(passingShips[i] is TradeShip)
-                                    {
-                                        Loger.Log("ship is normal tradeship");
-                                    }
-                                    else
-                                    {
-                                        Loger.Log("Unknown Servertradeship departed");
-                                        passingShips[i].Depart();
-                                    }
-                                }
-                                catch
-                                {
-                                    Loger.Log("Error Servertradeship departed");
-                                    passingShips[i].Depart();
-                                }
-                            }
-                        }
                         GetPlayersInfoCountRequest = 0;
                         ModelGameServerInfo gameServerInfo = connect.GetGameServerInfo();
                         UpdateWorldController.SendToServer(toServ, firstRun, gameServerInfo);
-                    }
-
-                    // Ensure there is a server ship
-                    if (MainHelper.EnableServerTradeship && Find.CurrentMap != null)
-                    {
-                        bool foundServerTradeShip = false;
-                        List<PassingShip> passingShips = Find.CurrentMap.passingShipManager.passingShips;
-                        foreach (PassingShip ship in passingShips)
-                        {
-                            if (ship is ServerTradeship)
-                            {
-                                foundServerTradeShip = true;
-                                break;
-                            }
-                        }
-                        if (!foundServerTradeShip)
-                        {
-                            Loger.Log("Servertradeship not found");
-
-                            TraderKindDef server_ship_def = (TraderKindDef)GenDefDatabase.GetDef(typeof(TraderKindDef), "Orbital_Server");
-                            ServerTradeship serverTradeship = new ServerTradeship(server_ship_def, null);
-                            Find.CurrentMap.passingShipManager.AddShip(serverTradeship);
-                            // tradeship = serverTradeship;
-                            Loger.Log("Servertradeship added: " + serverTradeship.name + ", " + serverTradeship.FullTitle);
-
-                        }
                     }
 
                     //запрос на информацию об игроках. Можно будет ограничить редкое получение для тех кто оффлайн

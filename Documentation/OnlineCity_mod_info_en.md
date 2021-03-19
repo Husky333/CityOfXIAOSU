@@ -1,359 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-	<!-- MainMenu.cs -->
-	<OCity_LAN_btn>多人网络游戏</OCity_LAN_btn>
-	<!-- Kor -->
-	<OCity_MainMenu_Online>在线</OCity_MainMenu_Online>
-	<OCity_MainMenu_Withdraw>撤回</OCity_MainMenu_Withdraw>
-	<OCity_MainMenu_Surrender>投降</OCity_MainMenu_Surrender>
-
-	<!-- CaravanArrivalAction_VisitOnline.cs -->
-	<OCity_Caravan_GoTrade>我们要用 {0} 来交换货物哦(￣▽￣)"。</OCity_Caravan_GoTrade>
-	<OCity_Caravan_GoTrade2>{0}</OCity_Caravan_GoTrade2>
-	<OCity_Caravan_LOGNoData>服务器上没有，有关于此交易对象的数据(* ￣︿￣)</OCity_Caravan_LOGNoData>
-	<OCity_Caravan_LOGSwap>商队交换：选择全部商队</OCity_Caravan_LOGSwap>
-	<!-- Kor -->
-	<OCity_Caravan_Go_Attack_Target>攻击╰（‵□′）╯</OCity_Caravan_Go_Attack_Target>
-	<OCity_Caravan_Confirm_Attack_TestBattle_Possible>真的要攻打这个定居点吗？有可能在不计后果的情况下进行训练战！</OCity_Caravan_Confirm_Attack_TestBattle_Possible>
-	<OCity_Caravan_Practive>不，只是练习呢。</OCity_Caravan_Practive>
-
-	<!-- OnlineCity_CaravanOnline.cs -->
-	<OCity_Caravan_Player>{0}玩家 {1}</OCity_Caravan_Player>
-	<OCity_Caravan_Other>物品的价值：{2}
-人和动物的价值：{3}</OCity_Caravan_Other>
-	<OCity_Caravan_PlayerAttackCost>攻击者的最高价格：{0}</OCity_Caravan_PlayerAttackCost>
-	<OCity_Caravan_FreeWeight>剩余负载能力： </OCity_Caravan_FreeWeight>
-	<OCity_Caravan_Trade>与{0}交易</OCity_Caravan_Trade>
-	<OCity_Caravan_Abort>You are under a year old or the wealth is less than</OCity_Caravan_Abort>
-	<!-- Kor -->
-	<OCity_Caravan_Attack>攻击 {0}</OCity_Caravan_Attack>
-
-	<!-- DevelopTest.cs -->
-	<OCity_DevTest_Test>检验</OCity_DevTest_Test>
-	<OCity_DevTest_NameTestPlayer>测试者名称</OCity_DevTest_NameTestPlayer>
-
-	<!-- GameStarter.cs -->
-	<OCity_Starter_CityNotBuild>这个地方被其他玩家占据了</OCity_Starter_CityNotBuild>
-
-	<!-- StorageTest.cs -->
-	<OCity_StorageTest_CreateGrass>春季种草（注意）原话就是这个意思我也没明白~</OCity_StorageTest_CreateGrass>
-	<OCity_StorageTest_CreateGrassDescrip>每年一次，在每卡上，当气温上升到5度以上时，在每一个无人居住、生长的小格子上，按距离草丛10左右的距离，种植一个新的小格子。</OCity_StorageTest_CreateGrassDescrip>
-	<OCity_StorageTest_LastIP>最后一个IP</OCity_StorageTest_LastIP>
-
-	<!-- OnlineCity_ClientData.cs -->
-	<OCity_ClientData_ChatDot>...</OCity_ClientData_ChatDot>
-	<OCity_ClientData_Chat>聊天o(*￣▽￣*)o </OCity_ClientData_Chat>
-
-	<!-- OnlineCity_Hash_Checker -->
-	<OC_Hash_CalculateLocalFiles>Calculate hash for local files</OC_Hash_CalculateLocalFiles>
-	<OC_Hash_CalculateFor>Calculate hash for: </OC_Hash_CalculateFor>
-	<OC_Hash_CalculateComplete>Calculate hash completed</OC_Hash_CalculateComplete>
-	<OC_Hash_CalculateConfFile>Mods Config files: </OC_Hash_CalculateConfFile>
-	<OC_Hash_Complete>Complete:</OC_Hash_Complete>
-	<OC_Hash_Downloading>Downloading mods update...</OC_Hash_Downloading>
-	<OC_Hash_Downloading_Finish>Downloaded </OC_Hash_Downloading_Finish>
-	<OC_Mods_Wait>Wait before playing online...</OC_Mods_Wait>
-	<OC_Mods_Complete>Complete:</OC_Mods_Complete>
-
-	<!-- Dialog_MainOnlineCity.cs -->
-	<OCity_Dialog_HelloLAN></OCity_Dialog_HelloLAN>
-	<OCity_Dialog_ListChat>聊天</OCity_Dialog_ListChat>
-	<OCity_Dialog_ListInfo>聊天信息</OCity_Dialog_ListInfo>
-	<OCity_Dialog_ListAbout>关于MOD</OCity_Dialog_ListAbout>
-	<OCity_Dialog_Settings>设置</OCity_Dialog_Settings>
-	<OCity_Dialog_Connecting>连接...</OCity_Dialog_Connecting>
-	<OCity_Dialog_Login>登录: </OCity_Dialog_Login>
-	<OCity_Dialog_Players>玩家: </OCity_Dialog_Players>
-	<OCity_Dialog_ChennelOwn> 频道创建者</OCity_Dialog_ChennelOwn>
-	<OCity_Dialog_ChennelUser> 会员</OCity_Dialog_ChennelUser>
-	<OCity_Dialog_ChennelCreate>创建频道</OCity_Dialog_ChennelCreate>
-	<OCity_Dialog_ChennelClose>关闭频道</OCity_Dialog_ChennelClose>
-	<OCity_Dialog_OthersFunctions>其他功能</OCity_Dialog_OthersFunctions>
-	<OCity_Dialog_ChennelCreate2>创建一个频道</OCity_Dialog_ChennelCreate2>
-	<OCity_Dialog_ChennelLeave>离开频道</OCity_Dialog_ChennelLeave>
-	<OCity_Dialog_ChennelRen>重命名</OCity_Dialog_ChennelRen>
-	<OCity_Dialog_ChennelCreating>创建频道</OCity_Dialog_ChennelCreating>
-	<OCity_Dialog_ChennelCreateName>输入频道名称</OCity_Dialog_ChennelCreateName>
-	<OCity_Dialog_ChennelQuit>退出通道</OCity_Dialog_ChennelQuit>
-	<OCity_Dialog_ChennelQuitCheck>你真的想要离开这个频道嘛?</OCity_Dialog_ChennelQuitCheck>
-	<OCity_Dialog_ChennelRenLabel>重命名这个频道~</OCity_Dialog_ChennelRenLabel>
-	<OCity_Dialog_ChennelNewName>输入新的频道名称 </OCity_Dialog_ChennelNewName>
-	<OCity_Dialog_PrivateMessage>个人信息</OCity_Dialog_PrivateMessage>
-	<OCity_Dialog_ChennelAddUser>添加会员(成员)</OCity_Dialog_ChennelAddUser>
-	<OCity_Dialog_ChennelPlayerInfo>信息</OCity_Dialog_ChennelPlayerInfo>
-	<OCity_Dialog_ChennelPlayerInfoTitle>关于</OCity_Dialog_ChennelPlayerInfoTitle>
-	<OCity_Dialog_AboutMode>关于 OnlineCity(多人城镇)</OCity_Dialog_AboutMode>
-	<OCity_Dialog_AutorPage>作者页面</OCity_Dialog_AutorPage>
-	<OCity_Dialog_Regame>重新开始</OCity_Dialog_Regame>
-	<OCity_Dialog_DeleteData>删除所有游戏数据</OCity_Dialog_DeleteData>
-	<OCity_Dialog_DeleteDataCheck>你真的要完全删除游戏，然后重新开始吗？</OCity_Dialog_DeleteDataCheck>
-	<OCity_Dialog_DeletedData>游戏已被删除。再次登录以创建新的。</OCity_Dialog_DeletedData>
-
-	<!-- OnlineCity_Dialog_CreateWorld.cs -->
-	<OCity_Dialog_CreateWorld_Create>创造世界</OCity_Dialog_CreateWorld_Create>
-	<OCity_Dialog_CreateWorld_BtnOk>OK/好的</OCity_Dialog_CreateWorld_BtnOk>
-	<OCity_Dialog_CreateWorld_Err>错误</OCity_Dialog_CreateWorld_Err>
-	<OCity_Dialog_CreateWorld_Err2>设置不正确</OCity_Dialog_CreateWorld_Err2>
-	<OCity_Dialog_CreateWorld_BtnCancel>取消</OCity_Dialog_CreateWorld_BtnCancel>
-	<OCity_Dialog_CreateWorld_Seed>种子</OCity_Dialog_CreateWorld_Seed>
-	<OCity_Dialog_CreateWorld_ScenarioErr>Please select a Scenario</OCity_Dialog_CreateWorld_ScenarioErr>
-	<OCity_Dialog_CreateWorld_Scenario>Select Scenario</OCity_Dialog_CreateWorld_Scenario>
-	<OCity_Dialog_CreateWorld_Difficulty>Select Difficulty</OCity_Dialog_CreateWorld_Difficulty>
-	<OCity_Dialog_CreateWorld_MapSize>当地地图的大小(200--小，400--大)</OCity_Dialog_CreateWorld_MapSize>
-	<OCity_Dialog_CreateWorld_PercentWorld>占地球表面生成量的百分比(从5到100): {0}</OCity_Dialog_CreateWorld_PercentWorld>
-
-	<!-- Dialog_LoginForm.cs -->
-	<OCity_LoginForm_BtnEnter>登录</OCity_LoginForm_BtnEnter>
-	<OCity_LoginForm_Register>注册</OCity_LoginForm_Register>
-	<OCity_LoginForm_Close>关闭</OCity_LoginForm_Close>
-	<OCity_LoginForm_LabelEnter>登录</OCity_LoginForm_LabelEnter>
-	<OCity_LoginForm_Server>服务器:</OCity_LoginForm_Server>
-	<OCity_LoginForm_Login>登录:</OCity_LoginForm_Login>
-	<OCity_LoginForm_Pass>密码:</OCity_LoginForm_Pass>
-	<OCity_LoginForm_Err1>Password and confirmation are different</OCity_LoginForm_Err1>
-	<OCity_LoginForm_Err2>Address, login and password must be longer than two characters</OCity_LoginForm_Err2>
-	<OCity_LoginForm_Mail>EMail (optional)</OCity_LoginForm_Mail>
-
-	<!-- SessionClientController.cs -->
-	<OCity_SessionCC_ConnectionFailTitle>连接失败</OCity_SessionCC_ConnectionFailTitle>
-	<OCity_SessionCC_LoginFailTitle>登录错误</OCity_SessionCC_LoginFailTitle>
-	<OCity_SessionCC_RegFailTitle>注册错误</OCity_SessionCC_RegFailTitle>
-	<OCity_SessionCC_MsgCanceledCreateW>取消</OCity_SessionCC_MsgCanceledCreateW>
-	<OCity_SessionCC_MsgCreateWorlErr>错误，再试一次吧.</OCity_SessionCC_MsgCreateWorlErr>
-	<OCity_SessionCC_MsgCreateWorlGood>哦耶！服务器上的世界已经创建成功！</OCity_SessionCC_MsgCreateWorlGood>
-	<OCity_SessionCC_MsgCreatingServer>创建服务器</OCity_SessionCC_MsgCreatingServer>
-	<OCity_SessionCC_Disconnected>连接错误.</OCity_SessionCC_Disconnected>
-	<OCity_SessionCC_Disconnect>断开连接</OCity_SessionCC_Disconnect>
-	<!-- Kor -->
-	<OCity_SessionCC_Shutdown_Command_ProgressSaved>我们收到了来自服务器的关机命令。进程已经保存下来了. Прогресс был сохранен.</OCity_SessionCC_Shutdown_Command_ProgressSaved>
-	<OCity_SessionCC_Shutdown_Command>服务器已收到关闭命令.</OCity_SessionCC_Shutdown_Command>
-	<OCity_SessionCC_Scenario_Classic>Классика/经典</OCity_SessionCC_Scenario_Classic>
-	<OCity_SessionCC_Client_UpdateNeeded>升级客户端! 此服务器的版本: </OCity_SessionCC_Client_UpdateNeeded>
-	<OCity_SessionCC_InitConnectedIntro_Title>注意事项!</OCity_SessionCC_InitConnectedIntro_Title>
-	<OCity_SessionCC_InitConnectedIntro_Text>（MOD与服务器规定的不一样）如果服务器已经设置了准确匹配的mod，而且还没有安装的话，现在就会被下载。如果Mods游戏子文件夹里有重要信息，请点击取消并进行备份! mods同步的过程可能需要几分钟的时间，之后游戏将重新启动。</OCity_SessionCC_InitConnectedIntro_Text>
-	<OCity_SessionCC_FilesUpdated>不是所有的文件都是解析哈希检查，它们被更新后会重启游戏。</OCity_SessionCC_FilesUpdated>
-
-	<!-- Kor -->
-	<!-- Dialog_Exchenge.cs -->
-	<OCity_Dialog_Exchenge_Close>关闭</OCity_Dialog_Exchenge_Close>
-	<OCity_Dialog_Exchenge_Edit>编辑</OCity_Dialog_Exchenge_Edit>
-	<OCity_Dialog_Exchenge_Trade_Orders>贸易订单</OCity_Dialog_Exchenge_Trade_Orders>
-	<OCity_Dialog_Exchenge_Viewing_Orders>查看订单</OCity_Dialog_Exchenge_Viewing_Orders>
-	<OCity_Dialog_Exchenge_Deal_Open_Everyone>这个交易对每个人来说都是可以参加的.</OCity_Dialog_Exchenge_Deal_Open_Everyone>
-	<OCity_Dialog_Exchenge_Deal_Open_Specific>此交易仅提供: {0}</OCity_Dialog_Exchenge_Deal_Open_Specific>
-	<OCity_Dialog_Exchenge_Seller>卖家</OCity_Dialog_Exchenge_Seller>
-	<OCity_Dialog_Exchenge_BeenOnline>已上线 </OCity_Dialog_Exchenge_BeenOnline>
-	<OCity_Dialog_Exchenge_Location>位置</OCity_Dialog_Exchenge_Location>
-	<OCity_Dialog_Exchenge_Days> 天数 </OCity_Dialog_Exchenge_Days>
-	<OCity_Dialog_Exchenge_In> 在(in) </OCity_Dialog_Exchenge_In>
-	<OCity_Dialog_Exchenge_Location_Goods>货物的位置:</OCity_Dialog_Exchenge_Location_Goods>
-	<OCity_Dialog_Exchenge_Number>数量</OCity_Dialog_Exchenge_Number>
-	<OCity_Dialog_Exchenge_Max_Repetition_Transaction>交易的最大重复次数:</OCity_Dialog_Exchenge_Max_Repetition_Transaction>
-	<OCity_Dialog_Exchenge_Acquire>购入</OCity_Dialog_Exchenge_Acquire>
-	<OCity_Dialog_Exchenge_GiveTo>给我吧</OCity_Dialog_Exchenge_GiveTo>
-	<OCity_Dialog_Exchenge_No_Warrants>没有权限</OCity_Dialog_Exchenge_No_Warrants>
-	<OCity_Dialog_Exchenge_Active_Orders>有效订单 {0}</OCity_Dialog_Exchenge_Active_Orders>
-	<OCity_Dialog_Exchenge_Update>更新</OCity_Dialog_Exchenge_Update>
-	<OCity_Dialog_Exchenge_Select_For_Sale>从{0}中选择出售</OCity_Dialog_Exchenge_Select_For_Sale>
-	<OCity_Dialog_Exchenge_Choose>选择</OCity_Dialog_Exchenge_Choose>
-	<OCity_Dialog_Exchenge_Order_Create>创建新订单</OCity_Dialog_Exchenge_Order_Create>
-	<OCity_Dialog_Exchenge_Save>保存</OCity_Dialog_Exchenge_Save>
-	<OCity_Dialog_Exchenge_Create>创建</OCity_Dialog_Exchenge_Create>
-	<OCity_Dialog_Exchenge_Trade>贸易</OCity_Dialog_Exchenge_Trade>
-	<OCity_Dialog_Exchenge_Counterproposal>反建议</OCity_Dialog_Exchenge_Counterproposal>
-	<OCity_Dialog_Exchenge_Action_Not_CarriedOut>未执行的行动</OCity_Dialog_Exchenge_Action_Not_CarriedOut>
-	<OCity_Dialog_Exchenge_Delete>删除</OCity_Dialog_Exchenge_Delete>
-	<OCity_Dialog_Exchenge_Order_New>新订单</OCity_Dialog_Exchenge_Order_New>
-	<OCity_Dialog_Exchenge_No_Exchanges>没有这种交换:</OCity_Dialog_Exchenge_No_Exchanges>
-	<OCity_Dialog_Exchenge_No_Available_Exchange>没有其他东西可供交换.</OCity_Dialog_Exchenge_No_Available_Exchange>
-	<OCity_Dialog_Exchenge_Done_Once>已经做了一次了:</OCity_Dialog_Exchenge_Done_Once>
-	<OCity_Dialog_Exchenge_We_Give>我们给予</OCity_Dialog_Exchenge_We_Give>
-	<OCity_Dialog_Exchenge_We_Give2>我们给予 {0} :</OCity_Dialog_Exchenge_We_Give2>
-	<OCity_Dialog_Exchenge_We_Get>我们得到</OCity_Dialog_Exchenge_We_Get>
-	<OCity_Dialog_Exchenge_No_User_Restrictions>没有用户限制.</OCity_Dialog_Exchenge_No_User_Restrictions>
-	<OCity_Dialog_Exchenge_User_Restrictions>只对此用户开放:</OCity_Dialog_Exchenge_User_Restrictions>
-	<OCity_Dialog_Exchenge_Add_User>+ 添加用户</OCity_Dialog_Exchenge_Add_User>
-	<OCity_Dialog_Exchenge_Specific_Facility_Assigned>已指定了一个具体的设施</OCity_Dialog_Exchenge_Specific_Facility_Assigned>
-	<OCity_Dialog_Exchenge_Add>+ 添加</OCity_Dialog_Exchenge_Add>
-	<OCity_Dialog_Exchenge_Whole_On>{1}的{0}上的一个整体（{2}%）。</OCity_Dialog_Exchenge_Whole_On>
-	<OCity_Dialog_Exchenge_Quality>质量</OCity_Dialog_Exchenge_Quality>
-	<OCity_Dialog_Exchenge_Whole_Less_Than>不亚于 </OCity_Dialog_Exchenge_Whole_Less_Than>
-	<OCity_Dialog_Exchenge_QualityNo_Less_Than>质量不亚于</OCity_Dialog_Exchenge_QualityNo_Less_Than>
-	<OCity_Dialog_Exchenge_All>全部</OCity_Dialog_Exchenge_All>
-	<OCity_Dialog_Exchenge_FromCorpse>从一具尸体上提取的</OCity_Dialog_Exchenge_FromCorpse>
-	<OCity_Dialog_Exchenge_FromCorpseD>允许从尸体上脱掉衣服是可以的。</OCity_Dialog_Exchenge_FromCorpseD>
-	<OCity_Dialog_Exchenge_FromNotCorpse>不是尸体上的</OCity_Dialog_Exchenge_FromNotCorpse>
-	<OCity_Dialog_Exchenge_FromNotCorpseD>不允许从尸体上脱掉衣服。</OCity_Dialog_Exchenge_FromNotCorpseD>
-
-	<!-- Kor -->
-	<!-- ThingTrade.cs -->
-	<OCity_ThingTrade_Quality_Strength>质量{0}。强度{1}的{2}。</OCity_ThingTrade_Quality_Strength>
-	<OCity_ThingTrade_Cut_Body_Off>切掉身体。</OCity_ThingTrade_Cut_Body_Off>
-	<OCity_ThingTrade_QualityBetter_StrengthMore>质量{0}和更好。强度{1}%及以上</OCity_ThingTrade_QualityBetter_StrengthMore>
-	<OCity_ThingTrade_CouldTake_OffCorpse>可以从身体上取下。</OCity_ThingTrade_CouldTake_OffCorpse>
-
-	<!-- UpdateWorldController.cs -->
-	<OCity_UpdateWorld_Trade>贸易</OCity_UpdateWorld_Trade>
-	<OCity_UpdateWorld_TradeDetails>玩家{0}到{1}转移物品。{2}</OCity_UpdateWorld_TradeDetails>
-
-	<!-- Dialog_Input.cs -->
-	<OCity_DialogInput_Ok>好的</OCity_DialogInput_Ok>
-	<OCity_DialogInput_Cancele>取消</OCity_DialogInput_Cancele>
-
-	<!-- Dialog_Registration.cs -->
-	<OCity_Dialog_Registration_Close>关闭</OCity_Dialog_Registration_Close>
-	<OCity_Dialog_Registration_BtnReg>注册</OCity_Dialog_Registration_BtnReg>
-	<OCity_Dialog_Registration_LabelReg>注册</OCity_Dialog_Registration_LabelReg>
-	<OCity_Dialog_Registration_Server>服务器:</OCity_Dialog_Registration_Server>
-	<OCity_Dialog_Registration_Login>登录:</OCity_Dialog_Registration_Login>
-	<OCity_Dialog_Registration_Pass>密码:</OCity_Dialog_Registration_Pass>
-	<OCity_Dialog_Registration_Check>确认密码:</OCity_Dialog_Registration_Check>
-
-	<!-- Dialog_TradeOnline.cs -->
-	<OCity_Dialog_TradeOnline_Trade>货物转让</OCity_Dialog_TradeOnline_Trade>
-
-	<!-- GrassFix.cs -->
-	<OCity_GrassFix_Plant>种植  </OCity_GrassFix_Plant>
-	<OCity_GrassFix_Grass> 药材</OCity_GrassFix_Grass>
-
-	<!-- PlayerClient.cs -->
-	<OCity_PlayerClient_LastTick>玩了多少年: {0}, 天: {1}.</OCity_PlayerClient_LastTick>
-	<OCity_PlayerClient_LastSaveTime>在游戏中：{2}</OCity_PlayerClient_LastSaveTime>
-	<OCity_PlayerClient_baseCount>基地数量： {3}</OCity_PlayerClient_baseCount>
-	<OCity_PlayerClient_caravanCount>商队：{4}</OCity_PlayerClient_caravanCount>
-	<OCity_PlayerClient_marketValue>物品财富：{5}</OCity_PlayerClient_marketValue>
-	<OCity_PlayerClient_marketValuePawn>人和动物的价值：{6}</OCity_PlayerClient_marketValuePawn>
-	<OCity_PlayerClient_LastSaveTimeNon>未参与</OCity_PlayerClient_LastSaveTimeNon>
-	<OCity_PlayerClient_InvolvedInPVP>参加VP</OCity_PlayerClient_InvolvedInPVP>
-	<OCity_PlayerClient_NotInvolvedInPVP>不参与PVP</OCity_PlayerClient_NotInvolvedInPVP>
-	<OCity_PlayerClient_Discord>纷争: </OCity_PlayerClient_Discord>
-	<OCity_PlayerClient_Email>Email: </OCity_PlayerClient_Email>
-	<OCity_PlayerClient_AboutMyself>关于我自己: </OCity_PlayerClient_AboutMyself>
-	<OCity_PlayerClient_Settings>设置</OCity_PlayerClient_Settings>
-	<OCity_PlayerClient_Save>保存</OCity_PlayerClient_Save>
-	<OCity_PlayerClient_CanChange>(可以改变{0})</OCity_PlayerClient_CanChange>
-	<OCity_PlayerClient_CanChangeNow>(现在可以改了)</OCity_PlayerClient_CanChangeNow>
-	<OCity_PlayerClient_SaveInterval>保存时间，间隔为分钟（至少5，默认为15）。</OCity_PlayerClient_SaveInterval>
-
-	<!-- Kor -->
-	<!-- GameUtils.cs -->
-	<OCity_GameUtils_From> 从 </OCity_GameUtils_From>
-	<OCity_GameUtils_Ok>OK</OCity_GameUtils_Ok>
-
-	<!-- Kor -->
-	<!-- GameAttacker.cs -->
-	<OCity_GameAttacker_Dialog_ErrorMessage>错误攻击</OCity_GameAttacker_Dialog_ErrorMessage>
-	<OCity_GameAttacker_Dialog_Settlement_Attack>你在攻击定居点</OCity_GameAttacker_Dialog_Settlement_Attack>
-	<OCity_GameAttacker_Withdraw>撤回</OCity_GameAttacker_Withdraw>
-	<OCity_GameAttacker_Main_Dialog>在这种模式下，必须永久激活暂停。尽管如此，游戏还在继续，形势也发生了变化。如果你想完成一次攻击，把那些你能做的事情带到地图的任何边缘，从主菜单中按下 </OCity_GameAttacker_Main_Dialog>
-	<OCity_GameAttacker_Main_Preparation_Dialog>准备工作已经完成。你有1分钟的时间看一下地图，攻击就会开始!</OCity_GameAttacker_Main_Preparation_Dialog>
-	<Ocity_GameAttacker_TrainingFight_Won>你赢了这场训练战！:)</Ocity_GameAttacker_TrainingFight_Won>
-	<Ocity_GameAttacker_TrainingFight_Caravan_Restore>车队现在要恢复了，你需要进入。:)</Ocity_GameAttacker_TrainingFight_Caravan_Restore>
-	<Ocity_GameAttacker_TrainingFight_Lost>你在这次的训练攻击中被打败了。:(</Ocity_GameAttacker_TrainingFight_Lost>
-	<OCity_GameAttacker_Done>完成了.</OCity_GameAttacker_Done>
-	<OCity_GameAttacker_Settlement_TakenOver>你接管了这个定居点！:) </OCity_GameAttacker_Settlement_TakenOver>
-	<OCity_GameAttacker_Defeated>你已经被打败了：(</OCity_GameAttacker_Defeated>
-	<OCity_GameAttacker_Colonist_Return>剩余的殖民者，有能力移动的，退到地图边缘的殖民者们，纷纷返回：</OCity_GameAttacker_Colonist_Return>
-
-	<!-- Kor -->
-	<!-- GameAttackHost.cs -->
-	<OCity_GameAttack_Host_Test_Attack>{0}正在对你的定居点进行测试攻击</OCity_GameAttack_Host_Test_Attack>
-	<OCity_GameAttack_Host_Settlement_Attacking>你的定居点正在攻击{0}</OCity_GameAttack_Host_Settlement_Attacking>
-	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog>等到攻击者准备好了之后。之后，速度会自动开启X1，并且不会改变。</OCity_GameAttack_Host_GameSpeed_Lock_Dialog>
-	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>如果你想完成并放弃结算，请点击主菜单。</OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>
-	<OCity_GameAttack_Host_Cancel_Action> 如果你想完成并取消操作，请点击主菜单。 </OCity_GameAttack_Host_Cancel_Action>
-	<OCity_GameAttack_Host_Surrender>投降</OCity_GameAttack_Host_Surrender>
-	<OCity_GameAttack_Host_Error_Message_Attack>错误攻击</OCity_GameAttack_Host_Error_Message_Attack>
-	<OCity_GameAttack_Host_Card_Restored>现在地图会恢复，你需要登录。</OCity_GameAttack_Host_Card_Restored>
-	<OCity_GameAttack_Host_Training_Attack_Repulsed>你击退了这次训练的攻击！:)</OCity_GameAttack_Host_Training_Attack_Repulsed>
-	<OCity_GameAttack_Host_Caravan_TransferToNewOwner>你已经被打败了，你已经被打败了，和解的权利转给了新的主人。:(</OCity_GameAttack_Host_Caravan_TransferToNewOwner>
-	<OCity_GameAttack_Host_Atack_Repulsed>你击退了攻击！ :) </OCity_GameAttack_Host_Atack_Repulsed>
-	<OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>跑不掉的敌人会留在地图上，但他们已经和指挥官失去了联系</OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>
-
-	<!-- OCMessadge -->
-	<OC_IncdidentMessadge_ArgErr>At least 3 arguments are required: player name, title, text</OC_IncdidentMessadge_ArgErr>
-	<OC_IncdidentMessadge_targetErr>You can not indicate yourself</OC_IncdidentMessadge_targetErr>
-	<OC_IncdidentMessadge_typeErr>Invalid message type</OC_IncdidentMessadge_typeErr>
-
-	<!-- OCIncidents -->
-	<OC_Incidents_CallIncidents_Err1>Enter incident type and player. Some incidents require additional parameters</OC_Incidents_CallIncidents_Err1>
-	<OC_Incidents_CallIncidents_TypeErr>Enter allowed incident type</OC_Incidents_CallIncidents_TypeErr>
-	<OC_Incidents_CallIncidents_MaxIncidentsInHour>Reached max number of incidents in hour</OC_Incidents_CallIncidents_MaxIncidentsInHour>
-	<OC_Incidents_CallIncidents_MaxIncidentsCnt>Reached max number of incodents for this player</OC_Incidents_CallIncidents_MaxIncidentsCnt>
-	<OC_Incidents_CallIncidents_NotShooted>Your previous incident for this player has not started yet</OC_Incidents_CallIncidents_NotShooted>
-	<OC_Incidents_IncidentsTurnedOFF>Incidents are disabled on this server</OC_Incidents_IncidentsTurnedOFF>
-	<OC_Incidents_CallIncidebts_selfErr>You cannot choose yourself</OC_Incidents_CallIncidebts_selfErr>
-	<OC_Incidents_CallIncidebts_YearErr1>You can attack after 2 years of your game</OC_Incidents_CallIncidebts_YearErr1>
-	<OC_Incidents_CallIncidebts_YearErr2>You can attack after 2 years of game of the attack target</OC_Incidents_CallIncidebts_YearErr2>
-	<OC_Incidents_CallIncidebts_CostErr1>Your settlement cost is too low</OC_Incidents_CallIncidebts_CostErr1>
-	<OC_Incidents_CallIncidebts_CostErr2>Attack target has too low settlement cost</OC_Incidents_CallIncidebts_CostErr2>
-	<OC_Incidents_OCIncident_WrongArg>Arguments set incorrectly</OC_Incidents_OCIncident_WrongArg>
-	<OC_Incidents_OCIncident_WealthErr>Wealth determination error</OC_Incidents_OCIncident_WealthErr>
-	<OC_Incidents_OCIncident_GoldErr>Not enough gold {0} from {1}, not enough {2}</OC_Incidents_OCIncident_GoldErr>
-	<OC_Incidents_OCIncident_NotEnoughGold>Required gold {0} is enough</OC_Incidents_OCIncident_NotEnoughGold>
-	<OC_Incidents_OCIncident_GoldPay>The required gold {0} has been paid to the mercenaries</OC_Incidents_OCIncident_GoldPay>
-	<OC_Incident_Atacker>The customer:</OC_Incident_Atacker>
-
-	<OC_Incidents_Raid_Warning_label>Serious threat!</OC_Incidents_Raid_Warning_label>
-	<OC_Incidents_Raid_Warning_Text_human>Your colonists are thrilled! A huge number of armed men are seen approaching from another player! They will arrive in 10-14 hours. Perhaps you should ask your allies for help or prepare for settlement evacuation</OC_Incidents_Raid_Warning_Text_human>
-	<OC_Incidents_Raid_Warning_Text_mech>Your colonists are terrified! A large group of Mechs from another player has been detected! They will arrive in 10-14 hours. The chances of survival are extremely low, the support of allies is necessary.It is possible to survive by evacuation</OC_Incidents_Raid_Warning_Text_mech>
-	<OC_Incidents_Inf_Warning_Text_inf>The earth trembles underfoot! Your experts claim that this is not an earthquake, but something in gigantic volumes is purposefully moving towards you from underground! Estimated arrival time 10-14 hours</OC_Incidents_Inf_Warning_Text_inf>
-	<OC_Incidents_Raid_Label>Bounty hunters!</OC_Incidents_Raid_Label>
-	<OC_Incidents_Raid_Text>Mercenary group arrived at your settlement</OC_Incidents_Raid_Text>
-	<OC_Incidents_Acid_Label>Gas atack!</OC_Incidents_Acid_Label>
-	<OC_Incidents_Acid_Text>Toxic gas has been sprayed over your settlement</OC_Incidents_Acid_Text>
-	<OC_Incidents_Inf_Label>Man-made Infestation!</OC_Incidents_Inf_Label>
-	<OC_Incidents_Inf_Text>Someone lured the swarm to the surface with high frequency vibrations</OC_Incidents_Inf_Text>
-	<OC_Incidents_EMP_Label>E.M.P.</OC_Incidents_EMP_Label>
-	<OC_Incidents_EMP_Text>Your settlement was irradiated with an electro-magnetic pulse that turned off all electronics</OC_Incidents_EMP_Text>
-	<OC_Incidents_Eclipse_Label>Solar rays absorber!</OC_Incidents_Eclipse_Label>
-	<OC_Incidents_Eclipse_Text>A special satellite was launched over your settlement, which absorbing sunlight</OC_Incidents_Eclipse_Text>
-	<OC_Incidents_Pack_Label>Battle beasts!</OC_Incidents_Pack_Label>
-	<OC_Incidents_Pack_Text>A pack of animals driven to madness has been sent to your settlement</OC_Incidents_Pack_Text>
-
-	<!-- OCIncidents UI-->
-	<OC_Incidents_Hire_label>Hire raid</OC_Incidents_Hire_label>
-	<OC_Incidents_Impact_label>Affect the area</OC_Incidents_Impact_label>
-	<OC_Incidents_Impact_text>Some rogue scientists can change weather conditions.For now, they are only ready to make acid rain. Not for free</OC_Incidents_Impact_text>
-	<OC_Incidents_Hire_text>Pirates and warlike tribes will gladly agree to do dirty work for a reward. It is even possible to contact scientists from high tech settlements who can lure a the swarm of beetles or mechanoids using special radio signals.</OC_Incidents_Hire_text>
-	<OC_Incidents_Execute>Execute!</OC_Incidents_Execute>
-	<OC_Acid_Rain>Acid rain</OC_Acid_Rain>
-	<OC_What_To_DO>What to do</OC_What_To_DO>
-	<OC_Raid>Raid</OC_Raid>
-	<OC_Bugs>Giant bugs</OC_Bugs>
-	<OC_Who_Hire>Who to hire</OC_Who_Hire>
-	<OC_Tribe>Tribe</OC_Tribe>
-	<OC_Pirate>Pirates</OC_Pirate>
-	<OC_Mech>Mechanoids</OC_Mech>
-	<OC_Arrive>Arrival mode</OC_Arrive>
-	<OC_Arrive_EdgeWalk>Edge walk</OC_Arrive_EdgeWalk>
-	<OC_Arrive_DropCenter>Drop to the center</OC_Arrive_DropCenter>
-	<OC_Arrive_RandomDrop>Random drop</OC_Arrive_RandomDrop>
-	<OC_Raid_Power>Raid power: x{0}</OC_Raid_Power>
-	<OC_Choose_what_to_do>Choose what to do</OC_Choose_what_to_do>
-	<OC_Choose_who_hire>Choose who to hire</OC_Choose_who_hire>
-	<OC_Choose_arrive>Choose arrival mode</OC_Choose_arrive>
-
-	<!-- OC_World_Map-->
-	<OC_Base_Interact>Interact with {0}</OC_Base_Interact>
-	<OC_Base_InteractWith>Interaction with settlement {0} player {1}</OC_Base_InteractWith>
-	
-	<!-- SCC.cs -->
-	<!-- <OCity_SCC_Disconnected>Ошибка соединения.</OCity_SCC_Disconnected>
-	<OCity_SCC_DisconnectedShow>Соединение прервано</OCity_SCC_DisconnectedShow> -->
-
-	<!-- Dialog_MainOnlineCity.cs -->
-	<!-- Kor -->
-	<OCity_Dialog_Exchenge_Chat>聊天</OCity_Dialog_Exchenge_Chat>
-	<OCity_Dialog_Exchenge_Gamers>游戏玩家</OCity_Dialog_Exchenge_Gamers>
-	<OCity_Dialog_Exchenge_What_Point>有什么意义呢？</OCity_Dialog_Exchenge_What_Point>
-
-	<OCity_InfoTabText></OCity_InfoTabText>
-	<OCity_AboutTabText> 作者AantCoder.</OCity_AboutTabText>
-	<OCity_AboutGeneralText>
-		Greetings, colonizer!
-		
 OnlineCity - is a network game module for the RimWorld survival simulator. It allows multiple players to play on the same planet online.
 
 After registration, you can create your own settlement and begin to develop alongside other participants. You are given the opportunity to monitor the progress of your neighbors, their settlements and caravans, but most importantly, you can provide each other with quite material assistance by transferring food, medicine, weapons or any other things, including settlers. For example, you can send your doctor to help in difficult times, and arrange for the doctor to be returned back after treatment. To transfer it is necessary only by all the rules of the game to collect a caravan and get to the goal! Also now you can beat off attacks on your settlement and capture the settlements of other players, giving commands to your colonists!
@@ -445,8 +89,11 @@ If interested, here is the exact formula for the maximum price of an attacking c
 4 / (25/1000000 + 10 / colony wealth)
 It turns out, for example, like this: the cost of a colony -> maximum for a caravan
 100,000 -> 32,000
+
 400,000 -> 80,000
+
 1,000,000 -> 114,400
+
 2,000,000 -> 133,332
 
 
@@ -532,6 +179,7 @@ Potentially, OnlineCity is compatible with any other mods, but, of course, you n
 Unzip the archive with the server to any folder. After that, you need to create a subfolder of World, which will store all the game data.
 
 Create a Settings.json file in the World folder (it can be opened with a simple notepad). Here is an example of its contents:
+```
 
 {
   "ServerName": "OnlineCity Server with modpack",
@@ -566,6 +214,7 @@ Create a Settings.json file in the World folder (it can be opened with a simple 
   ],
   "IgnoredLocalModFiles": [ ]
 }
+```
 
 ServerName and Description - the name and description of the server, while not used anywhere, is not necessary.
 
@@ -677,7 +326,9 @@ In the World folder, you can create two files for the connection ban.
 blockip.txt - IP addresses to be blocked. One line one IP, the last value can be written through the fraction 1.2.3.0/2 will add three IPs uploaded to .0, .1 and .2
 
 blockkey.txt is a key ban. each player has unique keys. You can find them out from the logs by searching for "key=", there is something like this line:
+
 Checked loginName key=hlw57jjSV5HacQbb9iiB@@@51b36et2ZBvBUkUztF+N
+
 Each user has several keys and matching any of them is enough to block. Therefore, to ban by key, you need to add both to the file (each on a separate line). Keys are separated by three @@@ symbols, you do not need to write them.
 When you first log in from new equipment, a special key 111@@@ is added
 
@@ -685,41 +336,72 @@ In both of these files, you can write comments that must go after the key or IP 
 
 
 You can get a summary of all the players in the console by pressing the letter S. This will create a Players_date.csv file with a list of players, last login time and some game information. Here's a description of some of the columns:
+
 LastOnlineDay - how many real days ago the player was online
+
 BaseCount - current number of settlements
+
 CaravanCount - the current number of caravans
+
 MarketValue - the current value of the settlement
+
 MarketValuePawn - the current value of the pawns
+
 AttacksWonCount - how many incidents were directed at the player
+
 AttacksInitiatorCount - how many incidents the player made on other players
+
 ColonistsCount - how many colonists there are
+
 ColonistsDownCount - how many of the colonists are off their feet
+
 ColonistsBleedCount - how many of the colonists have bleed
+
 PawnMaxSkill - how many colonists have 8 out of 12 skills of level 20. It should probably always be = 0. If it is equal to ColonistsCount, then this is definitely a cheat
+
 KillsHumanlikes - How many player colonists killed other people
+
 KillsMechanoids - how many player colonists killed mechanoids
+
 KillsBestPawn - which colonist killed the most
+
 Grants - rights on the server, "UsualUser" - regular user, "SuperAdmin. Moderator" - world creator (first registered)
+
 IntruderKeys - keys by which you can ban and search for logins to which you enter from one computer
+
 StartMarketValue - the price of the starting settlement
+
 StartMarketValuePawn - price of starting pawns
+
 MarketValueBy15Day - the maximum settlement value that the player has collected in 15 days
+
 MarketValuePawnBy15Day - the maximum value of pawns that a player has collected in 15 days
+
 MarketValueByHour - the maximum settlement value that a player has collected in 1 hour of play, excluding pause time
+
 MarketValuePawnByHour - the maximum value of the pawns that the player has collected in 1 hour of play, excluding the pause time
+
 TicksByHour - maximum number of ticks in one hour online (including pause time)
+
 HourInGame - game time for the current colony, excluding pause time
 
 
 Server logs are created automatically Log_data.txt, together with the file with incidents Incidents_month.csv. Several events are marked here for each incident:
+
 NewIncident - fromLogin player ordered a raid on toLogin
+
 SendMail - toLogin passed all the expectations from the past, and half a day of waiting before the attack for raids and the event started directly
+
 DayAfterMail - a day has passed after the event, at this moment it is determined how long you need to wait more (or not more), it is convenient to see how much damage the raid did
+
 End - the end of the wait, the event is fully completed and at this moment releases the queue.
 
 Columns:
+
 fromDay and toDay - what is the attacker's game day and target at this moment
-worth is the total cost of items and pawns. In separate columns for the entire account, in the worthTarget exactly the settlement of the target
+
+worth - is the total cost of items and pawns. In separate columns for the entire account, in the worthTarget exactly the settlement of the target
+
 delayAfterMail is how many days of delay were calculated (at the time of calculation, 1 day has already passed)
 
 
@@ -756,24 +438,34 @@ Special commands are written in the chat (usually in any channel), and they will
 /call {событие} {'player name'} {sId settlement target} {power}* {way of arrival}* {fraction}*
 *optional for some events
 the player's name is required in single quotes, for example: /call raid 'babur'
+
 List of available events:
-	raid - calling a raid on a player. The choice of capacity is available, an integer from 1 to 10. The method of arrival and the choice of fraction are also available.
-	inf - summon beetles on the player's card. Power selection available
-	acid - acid rain challenge on player card
+*	raid - calling a raid on a player. The choice of capacity is available, an integer from 1 to 10. The method of arrival and the choice of fraction are also available.
+*	inf - summon beetles on the player's card. Power selection available
+*	acid - acid rain challenge on player card
+	
 List of available arrival methods:
-	walk - arriving on foot from a random edge of the map
-	air - drop in drop pods to the player's home area
-	random - drop in capsules to random points on the map. Grants a highly dispersed raid
+*	walk - arriving on foot from a random edge of the map
+*	air - drop in drop pods to the player's home area
+*	random - drop in capsules to random points on the map. Grants a highly dispersed raid
+	
 List of available factions:
-	tribe - a hostile Aboriginal faction. A huge number of people with primitive weapons
-	pirate - hostile faction of the industrial level of development. Soldiers with good firearms and rocket launchers as well as melee fighters will arrive
-	mech - fraction of mechanoids. Heavily armored, as a rule, arrive in small numbers. When quality is more important than quantity
+*	tribe - a hostile Aboriginal faction. A huge number of people with primitive weapons
+*	pirate - hostile faction of the industrial level of development. Soldiers with good firearms and rocket launchers as well as melee fighters will arrive
+*	mech - fraction of mechanoids. Heavily armored, as a rule, arrive in small numbers. When quality is more important than quantity
+	
 Example:
+
 /call raid 'babur' 143 8 random pirate
+
 /call inf 'SSDExecutor' 23 4
+
 /call acid 'Aant' 16
+
 Note:
+
 if the power, arrival method and fraction are not specified for the raid event, the default is called
+
 /call raid {'player name'} 1 walk pirate
 
 
@@ -795,42 +487,53 @@ There is a bug that is difficult to catch. Sometimes after transferring a settle
 # 10. Other frequently asked questions
 
 > How to choose a game scenario?
+
 The game scenario cannot be customized, but the narrator and difficulty can be changed immediately after starting through the settings. Initially, the game begins with the narrator Cassandra, a standard scenario of the Classic and the complexity that was set when creating the server.
 
 > Is it possible to play together in one settlement?
+
 You cannot play on one map, except for attacking another player’s settlement, but this is still not direct control. If you need this type of game, try Zetrith Multiplayer
 
 > What happens to others when I pause?
+
 Nothing :) The course of the game of all participants is independent. Each player on the map has his own game session, in which interaction with foreign settlements and caravans is added. For example, you can pause and see how other people's caravans move on the map (although it’s difficult to get to the time when another player goes by caravan).
 But what an example of interaction may be: at the time of the attack, you can ask for help from a friend and pause the game, at that time he will come up as a caravan and transfer his settlers; after repulsing the attack, you can return the settlers in the same way. Or, for example, the one who came to the rescue can transfer all the pawns except one animal so that the caravan is not disbanded, then it will be possible to return the settlers immediately after repulsion, creating a new caravan from them and transferring them back to the friend’s caravan.
 
 > Game freezes after authorization
+
 It does not freeze, but it loads, just wait. The loading process can take up to ~ 5 - 10 minutes.
 
 > How to find logs
+
 Individual OnlineCity logs are written in: %appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\OnlineCity (this can be inserted into Explorer)
 
 > How to remove your colony?
+
 You need to open the Online window through the panel below or through the Menu in the game. Next, on the About Fashion tab, click Start Again.
 The same action can be done by writing the command in the chat: /killmyallplease
 
 > How often is the game saved?
+
 The game is saved to the server once every 15 minutes, if you have not changed it on the Settings tab, it is also saved when you exit the game through the menu.
 Using ALT + F4, you can roll back your colony to the last save.
 
 > What should I do if I forget my password?
+
 Unfortunately, there is no password recovery system. Try to remember and if access cannot be restored in any way, then ask the administrator to delete your colony in order to free up space on the planet and register a new user.
 
 > Is developer mode available to other players?
+
 It depends on the server settings. If the mode is disabled, then everyone except the administrator will not be able to put it. You can check it out yourself :)
 
 
 References:
-The main server address is: rimworld.online
-Discord: https://discord.gg/5DzWrnR
-Official VK mod group: https://vk.com/rimworldonline
-Trello: https://trello.com/b/gXtWtDjy/onlinecity-mod-rimworld
-GitHub: https://github.com/AantCoder/OnlineCity
-	</OCity_AboutGeneralText>
 
-</LanguageData>
+The main server address is: rimworld.online
+
+Discord: https://discord.gg/5DzWrnR
+
+Official VK mod group: https://vk.com/rimworldonline
+
+Trello: https://trello.com/b/gXtWtDjy/onlinecity-mod-rimworld
+
+GitHub: https://github.com/AantCoder/OnlineCity

@@ -66,34 +66,6 @@ namespace RimWorldOnlineCity
             return stat != null;
         }
 
-        public bool TradeWithShip(List<ThingEntry> sendThings)
-        {
-            Loger.Log("Client TradeWithShip");
-            var packet = new ModelMailTrade()
-            {
-                Things = sendThings
-            };
-            var stat = TransObject<ModelStatus>(packet, (int)PackageType.Request200Tradeship, (int)PackageType.Response201Tradeship);
-
-            if (stat != null && stat.Status != 0)
-            {
-                ErrorMessage = stat.Message;
-                return false;
-            }
-
-            return stat != null;
-        }
-
-        public Dictionary<string, ThingEntry> GetShipGoods()
-        {
-            Loger.Log("Client GetShipGoods");
-            var packet = new ModelMailTrade();
-
-            var things = TransObject<Dictionary<string, ThingEntry>>(packet, (int)PackageType.Request202GetTradeship, (int)PackageType.Response203GetTradeship);
-
-            return things;
-        }
-
         public bool ExchengeEdit(OrderTrade order)
         {
             Loger.Log("Client ExchengeEdit " + order.ToString());

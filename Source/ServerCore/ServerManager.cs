@@ -119,7 +119,6 @@ namespace ServerOnlineCity
 
             var rep = Repository.Get;
             rep.SaveFileName = GetWorldFileName(path);
-            rep.ShipSaveFileName = Path.Combine(path, "Ship.dat");
             rep.Load();
             CheckDiscrordUser();
             FileHashChecker = new FileHashChecker(ServerSettings);

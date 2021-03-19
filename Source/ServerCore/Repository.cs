@@ -24,16 +24,9 @@ namespace ServerOnlineCity
         public BaseContainer Data;
         public bool ChangeData;
 
-        public static ShipGoodsContainer GetShipGoodsData { get { return Get.ShipGoods; } }
-        public static bool ShipChangeData = false;
-
-        public ShipGoodsContainer ShipGoods;
-
         public readonly WorkTimer Timer;
 
         public string SaveFileName;
-
-        public string ShipSaveFileName;
         public string SaveFolderDataPlayers => Path.Combine(Path.GetDirectoryName(SaveFileName), "DataPlayers");
 
         private RepositorySaveData RepSaveData;
@@ -203,20 +196,6 @@ namespace ServerOnlineCity
 
         public void Load()
         {
-            if (!File.Exists(ShipSaveFileName))
-            {
-                ShipGoods = new ShipGoodsContainer();
-                Loger.Log("Server Ship Create Data");
-            }
-            else
-            {
-                using (var fs = File.OpenRead(ShipSaveFileName))
-                {
-                    var bf = new BinaryFormatter() { Binder = new ServerCoreSerializationBinder() };
-                    ShipGoods = (ShipGoodsContainer)bf.Deserialize(fs);
-                }
-            }
-
             bool needResave = false;
             if (!Directory.Exists(SaveFolderDataPlayers))
                 Directory.CreateDirectory(SaveFolderDataPlayers);
@@ -254,10 +233,11 @@ namespace ServerOnlineCity
                 }
             }
 
+
             if (needResave)
                 Save();
             ChangeData = false;
-            ShipChangeData = false;
+
 
         }
 
@@ -289,7 +269,6 @@ namespace ServerOnlineCity
 
         public void Save(bool onlyChangeData = false)
         {
-            SaveShip(onlyChangeData);
             if (onlyChangeData && !ChangeData) return;
             Loger.Log("Server Saving");
 
@@ -319,39 +298,6 @@ namespace ServerOnlineCity
             }
 
             Loger.Log("Server Saved");
-        }
-
-        public void SaveShip(bool onlyChangeData = false)
-        {
-            if (onlyChangeData && !ShipChangeData) return;
-            Loger.Log("Server Ship Saving");
-
-            try
-            {
-                if (File.Exists(ShipSaveFileName))
-                {
-                    if (File.Exists(ShipSaveFileName + ".bak")) File.Delete(ShipSaveFileName + ".bak");
-                    File.Move(ShipSaveFileName, ShipSaveFileName + ".bak");
-                }
-
-                Data.MaxIdChat = ChatManager.Instance.MaxChatId;
-
-                using (var fs = File.OpenWrite(ShipSaveFileName))
-                {
-                    var bf = new BinaryFormatter();
-                    bf.Serialize(fs, ShipGoods);
-                }
-
-                ShipChangeData = false;
-            }
-            catch
-            {
-                if (File.Exists(ShipSaveFileName + ".bak"))
-                    File.Copy(ShipSaveFileName + ".bak", ShipSaveFileName, true);
-                throw;
-            }
-
-            Loger.Log("Server Ship Saved");
         }
 
         public static string NormalizeLogin(string login)
