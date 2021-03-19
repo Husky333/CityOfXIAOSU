@@ -28,7 +28,7 @@
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <!--OutputPath>..\..\Assemblies\</OutputPath-->
-    <OutputPath>$(RimWorldFolder)Mods\OnlineCity\1.1\Assemblies\</OutputPath>
+    <OutputPath>..\..\..\..\Program Files %28x86%29\Steam\steamapps\common\RimWorld\Mods\CityOfXIAOSU\1.1\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -135,6 +135,7 @@
     <Compile Include="GameClasses\OCFactionManager.cs" />
     <Compile Include="Lib\Proc.cs" />
     <Compile Include="MailController.cs" />
+    <Compile Include="ServerTradeship.cs" />
     <Compile Include="Services\ClientHashChecker.cs" />
     <Compile Include="Services\IOnlineCityClientService.cs" />
     <Compile Include="Services\SetPlayerInfo.cs" />

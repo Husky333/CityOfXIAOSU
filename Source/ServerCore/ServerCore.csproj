@@ -5,7 +5,7 @@
     <ApplicationIcon />
     <OutputType>Exe</OutputType>
     <StartupObject />
-    <AssemblyName>ServerOnlineCity</AssemblyName>
+    <AssemblyName>ServerCityOfXIAOSU</AssemblyName>
     <RootNamespace>ServerOnlineCity</RootNamespace>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>

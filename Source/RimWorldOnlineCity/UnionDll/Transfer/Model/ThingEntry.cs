@@ -20,6 +20,8 @@ namespace Model
         /// Имя как то, которое выводится в интерфейсе игры
         /// </summary>
         public string Name { get; set; }
+
+        public string DefNameTE { get; set; }
         /// <summary>
         /// Количество
         /// </summary>
@@ -53,6 +55,7 @@ namespace Model
         protected void SetBaseInfo(Thing thing, int count)
         {
             Name = thing.LabelCapNoCount;
+            DefNameTE = thing.def.defName;
             Count = count;
             OriginalID = thing.thingIDNumber;
             isColonist = thing.Faction == Faction.OfPlayer ? true : false;
@@ -78,13 +81,15 @@ namespace Model
             {
                 thing.thingIDNumber = OriginalID;
             }
-            if (isColonist)
-            {
-                thing.SetFaction(Faction.OfPlayer);
-            }
-            else
-            {
-                thing.SetFaction(Find.FactionManager.AllFactions.FirstOrDefault(f => f.def.defName == "Pirate"));
+            if(thing.def.CanHaveFaction) {
+                if (isColonist)
+                {
+                    thing.SetFaction(Faction.OfPlayer);
+                }
+                else
+                {
+                    thing.SetFaction(Find.FactionManager.AllFactions.FirstOrDefault(f => f.def.defName == "Pirate"));
+                }
             }
             return thing;
         }
