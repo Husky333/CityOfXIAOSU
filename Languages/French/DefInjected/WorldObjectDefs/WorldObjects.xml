@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CaravanOnline.label>Caravane d'un autre joueur</CaravanOnline.label>
+  <CaravanOnline.description>Caravane d'un autre joueur en ligne</CaravanOnline.description>
+
+- <BaseOnline.label>Base d'un autre joueur</BaseOnline.label>
+- <BaseOnline.description>Base d'un autre joueur en ligne</BaseOnline.description>
+
+</LanguageData>
