@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <ModMetaData> 
-	<name>OnlineCity</name> 
-	<author>Aant</author> 
- 	<url>https://discord.gg/mWshqrh</url> 
+	<name>CityOfXIAOSU</name> 
+	<author>Husky</author> 
 	<supportedVersions>
 	  <li>1.1</li>
 	  <li>1.2</li>
 	</supportedVersions>
- 	<description>Online multiplayer mod which allows players to play on the same planet.</description>	
-	<packageId>Aant.OnlineCity</packageId>
+ 	<description>这是一个给XIAOSU制作的OnlineCity的修改版本，修复了bug，添加了功能，完善了汉化。QQ群：744517737。与原始的OnlineCity服务端和客户端不兼容。原始mod：OnlineCity。原作者：Aant 
+	This is a modified version of OnlineCity for XIAOSU. Fixed bugs, added features, improved localization of Chinese. QQ group: 744517737. It's not compatible with the original OnlineCity servers. Original mod: OnlineCity. Original author of OnlineCity: Aant</description>	
+	<packageId>XIAOSU.City</packageId>
 	<modDependencies>
     <li>
 		<packageId>UnlimitedHugs.HugsLib</packageId>

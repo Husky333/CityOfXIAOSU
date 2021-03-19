@@ -1,6 +1,11 @@
-Copyright 2018-2019 Ivanov Vasilii Sergeevich aka Aant
+Copyright 2021 Husky
 Licensed under the Apache License, Version 2.0
 
+CityOfXIAOSU is a modified version of OnlineCity. The code has been changed to fix and improve several issues.
+CityOfXIAOSU is not compatible with the original OnlineCity servers and clients.
+
+Original authors of OnlineCity: Ivanov Vasilii Sergeevich aka Aant
+Original mod: OnlineCity (Apache License, Version 2.0) https://github.com/AantCoder/OnlineCity
 List of components used in OnlineCity:
 * Harmony library made by Andreas Pardeike (MIT license) https://github.com/pardeike/Harmony
 * HugsLib https://github.com/UnlimitedHugs/RimworldHugsLib

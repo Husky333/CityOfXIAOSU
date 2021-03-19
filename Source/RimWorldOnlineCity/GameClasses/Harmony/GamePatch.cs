@@ -171,4 +171,35 @@ namespace RimWorldOnlineCity.GameClasses.Harmony
     }
 
     /// ////////////////////////////////////////////////////////////
+    /// 
+
+    [HarmonyPatch(typeof(Dialog_Trade))]
+    [HarmonyPatch("Close")]
+    internal class Dialog_Trade_Close_Patch
+    {
+
+        [HarmonyPostfix]
+        public static void Postfix()
+        {
+            if(SessionClientController.tradeship!=null)
+                SessionClientController.tradeship.CheckUpdateServer();
+        }
+
+    }
+
+    [HarmonyPatch(typeof(IncidentWorker_OrbitalTraderArrival))]
+    [HarmonyPatch("CanSpawn")]
+    internal class IncidentWorker_OrbitalTraderArrival_CanSpawn_Patch
+    {
+        [HarmonyPostfix]
+        public static void Postfix(TraderKindDef trader, ref bool __result)
+        {
+            if(trader.defName== "Orbital_Server")
+                __result = false;
+        }
+
+    }
+    
+
+
 }

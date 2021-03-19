@@ -20,7 +20,7 @@ namespace OCUnion
         public static bool OffAllLog = false;
 
         //public static string VersionInfo = $"Version {Assembly.GetExecutingAssembly().FullName}";
-        public static string VersionInfo = "Version XIAOSU 1.0.0 based on 0.03.65a";
+        public static string VersionInfo = "Version XIAOSU 1.0.2 based on 0.03.65a";
 
         public static bool DisableModSettingsInMainMenu = true;
 
@@ -32,7 +32,11 @@ namespace OCUnion
         //public static readonly long  VersionNum = Assembly.GetExecutingAssembly().GetName().Version.Revision;
         public static long VersionNum = 99999;
 
-        public static long VersionNum_xiaosu = 10000;
+        public static long VersionNum_xiaosu = 10002;
+
+        public static bool EnableServerTradeship = true;
+
+        public static string ServerTradeshipName = "腐竹的黑心商船";
 
         public static string DefaultIP = DebugMode ? "localhost" : "rimworld.online"; // rimworld.online 194.87.95.90:19020
 
