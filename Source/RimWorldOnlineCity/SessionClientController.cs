@@ -103,7 +103,6 @@ namespace RimWorldOnlineCity
             //Task.Run(() => ClientHashChecker.StartGenerateHashFiles());
         }
 
-
         private static object UpdatingWorld = new Object();
         private static int GetPlayersInfoCountRequest = 0;
 
@@ -812,7 +811,7 @@ namespace RimWorldOnlineCity
                 SetFullInfo(serverInfo);
 
                 Loger.Log("Client ServerName=" + serverInfo.ServerName);
-                Loger.Log("Client ServerVersion=" + serverInfo.VersionInfo + " (" + serverInfo.VersionNum + ")");
+                Loger.Log("Client ServerVersion=" + serverInfo.VersionInfo + " (" + serverInfo.VersionNum + ")"+ " (" + serverInfo.VersionNum_xiaosu + ")");
                 Loger.Log("Client IsAdmin=" + serverInfo.IsAdmin
                     + " Seed=" + serverInfo.Seed
                     + " Scenario=" + serverInfo.ScenarioName
@@ -867,6 +866,12 @@ namespace RimWorldOnlineCity
         {
             try
             {
+                if (!serverInfo.VersionInfo.Contains("XIAOSU"))
+                {
+                    Disconnected("服务器不是XIAOSU特别版。Server type is not XIAOSU: " + serverInfo.VersionInfo);
+                    return;
+                }
+
                 if (!checkFiles)
                 {
                     var msg = "OCity_SessionCC_FilesUpdated".Translate() + Environment.NewLine
@@ -876,6 +881,12 @@ namespace RimWorldOnlineCity
                                 + string.Join(Environment.NewLine, UpdateModsWindow.SummaryList));
                     //Не все файлы прошли проверку, надо инициировать перезагрузку всех модов
                     Disconnected(msg, () => ModsConfig.RestartFromChangedMods());
+                    return;
+                }
+
+                if (MainHelper.VersionNum_xiaosu < serverInfo.VersionNum_xiaosu)
+                {
+                    Disconnected("OCity_SessionCC_Client_UpdateNeeded".Translate() + serverInfo.VersionInfo);
                     return;
                 }
 
@@ -1069,6 +1080,17 @@ namespace RimWorldOnlineCity
                 var approveModList = true;
                 foreach (var clientFileChecker in ClientFileCheckers)
                 {
+                    /*
+                    if (clientFileChecker.FolderType == FolderType.ModsConfigPath)
+                    {
+                        IEnumerator<Mod> mod_enumerator = LoadedModManager.ModHandles.GetEnumerator();
+                        while (mod_enumerator.MoveNext())
+                        {
+                            Mod m = (Mod)mod_enumerator.Current;
+                            m.WriteSettings();
+                        }
+                    }
+                    */
                     var res = (int)fc.GenerateRequestAndDoJob(clientFileChecker);
                     approveModList = approveModList && ((int)res == 0);
                 }

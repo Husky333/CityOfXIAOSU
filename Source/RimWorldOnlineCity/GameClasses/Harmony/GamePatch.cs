@@ -67,6 +67,11 @@ namespace RimWorldOnlineCity.GameClasses.Harmony
         [HarmonyPrefix]
         public static bool Prefix()
         {
+            if (MainHelper.DisableModSettingsInMainMenu)
+            {
+                Loger.Log("HugsLibUtility_OpenModSettingsDialog_Patch DisableModSettingsInMainMenu");
+                return false;
+            }
             if (Current.Game == null) return true;
             if (!SessionClient.Get.IsLogined) return true;
             if (Prefs.DevMode) return true; //чтобы разрешить тем, у кого есть право на админку

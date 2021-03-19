@@ -215,7 +215,7 @@ namespace ServerOnlineCity
                     //var dataVersion = Data.VersionNum;
                     Loger.Log("Server Version data: " + Data.Version + " Current version: " + MainHelper.VersionInfo);
 
-                    if (Data.Version != MainHelper.VersionInfo || Data.VersionNum < MainHelper.VersionNum + 1)
+                    if (Data.Version != MainHelper.VersionInfo || Data.VersionNum < MainHelper.VersionNum + 1 || Data.VersionNum_xiaosu < MainHelper.VersionNum_xiaosu + 1)
                     {
                         convertToLastVersion();
                         needResave = true;
@@ -264,6 +264,7 @@ namespace ServerOnlineCity
 
             Data.Version = MainHelper.VersionInfo;
             Data.VersionNum = MainHelper.VersionNum;
+            Data.VersionNum_xiaosu = MainHelper.VersionNum_xiaosu;
         }
 
         public void Save(bool onlyChangeData = false)

@@ -149,6 +149,7 @@ namespace ServerOnlineCity.Services
                     IsAdmin = player.IsAdmin,
                     VersionInfo = MainHelper.VersionInfo,
                     VersionNum = MainHelper.VersionNum,
+                    VersionNum_xiaosu = MainHelper.VersionNum_xiaosu,
                     Seed = data.WorldSeed ?? "",
                     ScenarioName = data.WorldScenarioName,
                     MapSize = data.WorldMapSize,

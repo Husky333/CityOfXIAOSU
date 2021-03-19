@@ -11,6 +11,7 @@ namespace Transfer
         public bool IsAdmin { get; set; }
         public string VersionInfo { get; set; }
         public long VersionNum { get; set; }
+        public long VersionNum_xiaosu { get; set; }
         public string ServerName { get; set; }
         /// <summary>
         /// Будет ли выполняться проверка хеша файлов на клиенте

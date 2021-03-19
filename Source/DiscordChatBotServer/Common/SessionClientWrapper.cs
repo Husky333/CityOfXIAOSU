@@ -172,6 +172,7 @@ namespace OC.DiscordBotServer.Common
                 sb.AppendLine("Seed:" + serverInfo.Seed);
                 sb.AppendLine("VersionInfo" + serverInfo.VersionInfo);
                 sb.AppendLine("VersionNum" + serverInfo.VersionNum);
+                sb.AppendLine("VersionNum_xiaosu" + serverInfo.VersionNum_xiaosu);
             }
 
             sb.AppendLine("****************");

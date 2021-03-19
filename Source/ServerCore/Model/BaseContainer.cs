@@ -14,6 +14,7 @@ namespace ServerOnlineCity.Model
     {
         public string Version { get; set; }
         public long VersionNum { get; set; }
+        public long VersionNum_xiaosu { get; set; }
 
         //public long VersionNum => long.Parse((Version ?? "0").Where(c => Char.IsDigit(c)).Aggregate("0", (r, i) => r + i));
 
@@ -74,6 +75,7 @@ namespace ServerOnlineCity.Model
             WorldObjectsDeleted = new List<WorldObjectEntry>();
             Orders = new List<OrderTrade>();
             VersionNum = MainHelper.VersionNum;
+            VersionNum_xiaosu = MainHelper.VersionNum_xiaosu;
             WorldObjectOnlineList = new List<WorldObjectOnline>();
             FactionOnlineList = new List<FactionOnline>();
         }

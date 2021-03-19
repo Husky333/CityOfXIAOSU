@@ -17,7 +17,7 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>$(RimWorldFolder)Mods\OnlineCity\1.1\Assemblies\</OutputPath>
+    <OutputPath>..\..\..\..\Program Files %28x86%29\Steam\steamapps\common\RimWorld\Mods\CityOfXIAOSU\1.1\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

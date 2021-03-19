@@ -20,7 +20,9 @@ namespace OCUnion
         public static bool OffAllLog = false;
 
         //public static string VersionInfo = $"Version {Assembly.GetExecutingAssembly().FullName}";
-        public static string VersionInfo = "Version 0.03.65a from 2021.02.24";
+        public static string VersionInfo = "Version XIAOSU 1.0.0 based on 0.03.65a";
+
+        public static bool DisableModSettingsInMainMenu = true;
 
         public static string Key = "";
 
@@ -28,7 +30,9 @@ namespace OCUnion
         /// Для автоматической проверки: версия клиента должна быть больше или равна версии сервера
         /// </summary>
         //public static readonly long  VersionNum = Assembly.GetExecutingAssembly().GetName().Version.Revision;
-        public static long VersionNum = 30065;
+        public static long VersionNum = 99999;
+
+        public static long VersionNum_xiaosu = 10000;
 
         public static string DefaultIP = DebugMode ? "localhost" : "rimworld.online"; // rimworld.online 194.87.95.90:19020
 
