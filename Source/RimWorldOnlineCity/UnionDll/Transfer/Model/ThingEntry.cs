@@ -107,7 +107,7 @@ namespace Model
             if (MainHelper.DebugMode) File.WriteAllText(Loger.PathLog + "MailPawnB" + (++nnnn).ToString() + ".xml", Data);
             //логика коррекции основывается на 3х группыах:
             //колонист, человек не колонист (пират или пленник), животное
-            bool col = Data.Contains("<kindDef>Colonist</kindDef>");
+            bool col = Data.Contains("<kindDef>Colonist</kindDef>") || Data.Contains("<kindDef>Tribesperson</kindDef>");
             if (!col) col = Data.Contains("ColonistGeneral</kindDef>"); //для мода с андроидами
             bool isAnimal = GameXMLUtils.GetByTag(Data, "def") == GameXMLUtils.GetByTag(Data, "kindDef");
             //для всех людей устанавливаем фракцию игрока (у животных не меняем)
