@@ -41,7 +41,7 @@ namespace OC.DiscordBotServer
                 var result = await _commands.ExecuteAsync(context, argPos + 1, _services);
                 if (!result.IsSuccess)
                 {
-                    message.Channel.SendMessageAsync(result.ErrorReason);
+                    await message.Channel.SendMessageAsync(result.ErrorReason);
                     Console.WriteLine(result.ErrorReason);
                 }
 

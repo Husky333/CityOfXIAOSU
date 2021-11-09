@@ -69,12 +69,14 @@ namespace Transfer
                 // Generate open-close keys  KClose-KOpen
                 //Генерим рандомную пару КЗакр-КОткр
                 var crypto = new CryptoProvider();
+                #pragma warning disable CS0162
                 if (UseCryptoKeys) crypto.GenerateKeys();
 
                 //Loger.Log("Client Connect2");
                 Client = new ConnectClient(addr, port);
 
                 //Loger.Log("Client Connect3");//Строго первый пакет: Передаем серверу КОткр
+                #pragma warning disable CS0162
                 if (UseCryptoKeys)
                     Client.SendMessage(Encoding.UTF8.GetBytes(crypto.OpenKey));
                 else
@@ -83,6 +85,7 @@ namespace Transfer
                 //Loger.Log("Client Connect4");
                 //Строго первый ответ: Передаем клиенту КОткр(Сессия)
                 var rc = Client.ReceiveBytes();
+                #pragma warning disable CS0162
                 if (UseCryptoKeys)
                     Key = crypto.Decrypt(rc);
                 else

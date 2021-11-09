@@ -410,7 +410,7 @@ namespace RimWorldOnlineCity
             Predicate<IntVec3> baseValidator = (IntVec3 x) => x.Standable(map) && !x.Fogged(map);
             Faction hostFaction = map.ParentFaction;
             IntVec3 root;
-            if (CellFinder.TryFindRandomEdgeCellWith((IntVec3 x) => baseValidator(x) && (extraCellValidator == null || extraCellValidator(x)) && ((hostFaction != null && map.reachability.CanReachFactionBase(x, hostFaction)) || (hostFaction == null && map.reachability.CanReachBiggestMapEdgeRoom(x))), map, CellFinder.EdgeRoadChance_Neutral, out root))
+            if (CellFinder.TryFindRandomEdgeCellWith((IntVec3 x) => baseValidator(x) && (extraCellValidator == null || extraCellValidator(x)) && ((hostFaction != null && map.reachability.CanReachFactionBase(x, hostFaction)) || (hostFaction == null && map.reachability.CanReachBiggestMapEdgeDistrict(x))), map, CellFinder.EdgeRoadChance_Neutral, out root))
             {
                 return CellFinder.RandomClosewalkCellNear(root, map, 5, null);
             }
@@ -422,7 +422,7 @@ namespace RimWorldOnlineCity
             {
                 return CellFinder.RandomClosewalkCellNear(root, map, 5, null);
             }
-            Log.Warning("Could not find any valid edge cell.", false);
+            Log.Warning("Could not find any valid edge cell.");
             return CellFinder.RandomCell(map);
         }
 
@@ -546,7 +546,7 @@ namespace RimWorldOnlineCity
                     if (MainHelper.DebugMode) Loger.Log("SetFaction...3");
                     var p = thin as Pawn;
                     if (MainHelper.DebugMode) Loger.Log("SetFaction...4");
-                    if (!freePirate && p.guest != null) p.guest.SetGuestStatus(factionPirate, true);
+                    if (!freePirate && p.guest != null) p.guest.SetGuestStatus(factionPirate);
                     if (MainHelper.DebugMode) Loger.Log("SetFaction...5");
                 }
                 else

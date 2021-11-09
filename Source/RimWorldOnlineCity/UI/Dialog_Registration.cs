@@ -52,15 +52,15 @@ namespace RimWorldOnlineCity
 
         public override void DoWindowContents(Rect inRect)
         {
-            const float categoryPadding = 10f;
-            const float categoryInset = 30f;
-            const float radioLabelInset = 40f;
+            //const float categoryPadding = 10f;
+            //const float categoryInset = 30f;
+            //const float radioLabelInset = 40f;
             const float mainListingSpacing = 6f;
-            const float subListingSpacing = 6f;
-            const float subListingLabelWidth = 100f;
-            const float subListingRowHeight = 30f;
-            const float checkboxListingWidth = 280f;
-            const float listingColumnSpacing = 17f;
+            //const float subListingSpacing = 6f;
+            //const float subListingLabelWidth = 100f;
+            //const float subListingRowHeight = 30f;
+            //const float checkboxListingWidth = 280f;
+            //const float listingColumnSpacing = 17f;
             
             var btnSize = new Vector2(140f, 40f);
             var buttonYStart = inRect.height - btnSize.y;
@@ -158,12 +158,12 @@ namespace RimWorldOnlineCity
         {
             const float categoryPadding = 10f;
             const float categoryInset = 0;// 30f;
-            const float radioLabelInset = 40f;
-            const float mainListingSpacing = 6f;
+            //const float radioLabelInset = 40f;
+            //const float mainListingSpacing = 6f;
             const float subListingSpacing = 0;// 6f;
             const float subListingLabelWidth = 180f;// 130f;
             const float subListingRowHeight = 25;// 30f;
-            const float checkboxListingWidth = 280f;
+            //const float checkboxListingWidth = 280f;
             const float listingColumnSpacing = 17f;
             
             var expectedHeight = categoryPadding * 2 + (subListingRowHeight + subListingSpacing) * 1;

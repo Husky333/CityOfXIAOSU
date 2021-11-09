@@ -268,7 +268,7 @@ namespace RimWorldOnlineCity.UI
             }
 
             Color colorOrig = GUI.color;
-            GUI.color = StatusCheck ? Color.green : ColoredText.RedReadable;
+            GUI.color = StatusCheck ? Color.green : ColoredText.ThreatColor;
             Widgets.Label(new Rect(rect.x + 150f, rect.y + 10f, rect.width - 150f, 40f), StatusText);
             GUI.color = colorOrig;
 

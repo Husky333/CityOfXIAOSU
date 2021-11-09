@@ -109,7 +109,7 @@ namespace ServerOnlineCity
             }
             else
             {
-                dataToSave = data;
+                //dataToSave = data;
             }
 
             File.WriteAllBytes(fileName, dataToSave);

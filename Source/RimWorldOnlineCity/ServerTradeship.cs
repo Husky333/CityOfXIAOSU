@@ -154,13 +154,10 @@ namespace RimWorldOnlineCity
 			{
 				yield return thing;
 			}
-			IEnumerator<Thing> enumerator = null;
 			foreach (Pawn pawn in TradeUtility.AllSellableColonyPawns(base.Map))
 			{
 				yield return pawn;
 			}
-			IEnumerator<Pawn> enumerator2 = null;
-			yield break;
 			yield break;
 		}
 
@@ -180,7 +177,7 @@ namespace RimWorldOnlineCity
 				ts.Add(t);
 			}
 			ThingDef silver_def = (ThingDef)GenDefDatabase.GetDef(typeof(ThingDef), "Silver");
-			Thing silver = StockGeneratorUtility.TryMakeForStockSingle(silver_def, 10000);
+			Thing silver = StockGeneratorUtility.TryMakeForStockSingle(silver_def, 10000, null);
 			ts.Add(silver);
 
 			this.things.TryAddRangeOrTransfer(ts, true, false);
@@ -337,21 +334,15 @@ namespace RimWorldOnlineCity
 			return this.name + " (" + this.def.label + ")";
 		}
 
-		// Token: 0x060059FD RID: 23037 RVA: 0x001DEBFC File Offset: 0x001DCDFC
-		protected override AcceptanceReport CanCommunicateWith_NewTemp(Pawn negotiator)
+		// Token: 0x06007280 RID: 29312 RVA: 0x00266CF4 File Offset: 0x00264EF4
+		protected override AcceptanceReport CanCommunicateWith(Pawn negotiator)
 		{
-			AcceptanceReport result = base.CanCommunicateWith_NewTemp(negotiator);
+			AcceptanceReport result = base.CanCommunicateWith(negotiator);
 			if (!result.Accepted)
 			{
 				return result;
 			}
-			return negotiator.CanTradeWith_NewTemp(base.Faction, this.TraderKind);
-		}
-
-		// Token: 0x060059FE RID: 23038 RVA: 0x001DEC2E File Offset: 0x001DCE2E
-		protected override bool CanCommunicateWith(Pawn negotiator)
-		{
-			return base.CanCommunicateWith(negotiator) && negotiator.CanTradeWith(base.Faction, this.TraderKind);
+			return negotiator.CanTradeWith(base.Faction, this.TraderKind).Accepted;
 		}
 
 		// Token: 0x060059FF RID: 23039 RVA: 0x001DEC50 File Offset: 0x001DCE50
@@ -422,7 +413,7 @@ namespace RimWorldOnlineCity
 			Thing thing = this.HeldThingMatching(thingDef, stuffDef);
 			if (thing == null)
 			{
-				Log.Error("Changing count of thing trader doesn't have: " + thingDef, false);
+				Log.Error("Changing count of thing trader doesn't have: " + thingDef);
 			}
 			thing.stackCount += count;
 		}

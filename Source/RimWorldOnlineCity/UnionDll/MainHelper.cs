@@ -32,11 +32,11 @@ namespace OCUnion
         //public static readonly long  VersionNum = Assembly.GetExecutingAssembly().GetName().Version.Revision;
         public static long VersionNum = 99999;
 
-        public static long VersionNum_xiaosu = 10002;
+        public static long VersionNum_xiaosu = 10003;
 
         public static bool EnableServerTradeship = true;
 
-        public static string ServerTradeshipName = "腐竹的黑心商船";
+        public static string ServerTradeshipName = "服务器商船";
 
         public static string DefaultIP = DebugMode ? "localhost" : "rimworld.online"; // rimworld.online 194.87.95.90:19020
 

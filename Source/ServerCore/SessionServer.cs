@@ -82,11 +82,13 @@ namespace ServerOnlineCity
                 //Строго первый пакет: Передаем серверу КОткр
                 var rc = Client.ReceiveBytes();
                 var crypto = new CryptoProvider();
+                #pragma warning disable CS0162
                 if (SessionClient.UseCryptoKeys) crypto.OpenKey = Encoding.UTF8.GetString(rc);
 
                 //Строго первый ответ: Передаем клиенту КОткр(Сессия)
                 SetKey();
                 Loger.Log("Server SendMessage1");
+                #pragma warning disable CS0162
                 if (SessionClient.UseCryptoKeys)
                     Client.SendMessage(crypto.Encrypt(Key));
                 else

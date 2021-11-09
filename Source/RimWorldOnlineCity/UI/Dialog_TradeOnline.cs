@@ -102,7 +102,6 @@ namespace RimWorldOnlineCity
                 }, false, false);
             }
             
-            float num = 0f;
             for (int i = 0; i < stackParts.Count; i++)
             {
                 int count = stackParts[i].Count;

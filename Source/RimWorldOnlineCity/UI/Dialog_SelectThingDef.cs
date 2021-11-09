@@ -18,7 +18,7 @@ namespace RimWorldOnlineCity.UI
         public QualityRange SelectQualities = QualityRange.All;
 
         private ThingFilter thingFilter = new ThingFilter();
-        private Vector2 scrollPosition;
+        private readonly ThingFilterUI.UIState state = new ThingFilterUI.UIState();
 
         public void ClearFilter()
         {
@@ -81,8 +81,8 @@ namespace RimWorldOnlineCity.UI
             //выше кнопок
             Rect workRect = new Rect(inRect.x, inRect.y, inRect.width, buttonYStart - mainListingSpacing);
 
-            ThingFilterUI.DoThingFilterConfigWindow(workRect, ref this.scrollPosition, thingFilter, null, 8);
-            
+            ThingFilterUI.DoThingFilterConfigWindow(workRect,  this.state, thingFilter, null, 8);
+
         }
 
     }

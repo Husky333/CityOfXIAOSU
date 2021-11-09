@@ -34,6 +34,7 @@ namespace RimWorldOnlineCity
 
         public override void WorldLoaded()
         {
+            #pragma warning disable CS0618
             var obj = UtilityWorldObjectManager.GetUtilityWorldObject<WorldDataStore>();
             //после загрузки мира
             GameData = obj;

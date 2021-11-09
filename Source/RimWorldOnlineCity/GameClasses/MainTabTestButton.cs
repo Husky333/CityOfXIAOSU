@@ -17,7 +17,7 @@ namespace RimWorldOnlineCity
 
         public override void DoWindowContents(Rect inRect) //окно с кнопками вызовов ивентов
         {
-            base.DoWindowContents(inRect);
+            //base.DoWindowContents(inRect);
             resizeable = false;
             forcePause = false;
             doCloseX = true;

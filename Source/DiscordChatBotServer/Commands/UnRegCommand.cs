@@ -14,6 +14,7 @@ namespace OC.DiscordBotServer.Commands
             throw new NotImplementedException();
         }
 
+        #pragma warning disable CS0628
         protected bool CanExecute(SocketCommandContext parameter, out string message)
         {
             throw new NotImplementedException();

@@ -110,7 +110,6 @@ namespace RimWorldOnlineCity
                 , args.Count > 5 ? args[5].ToLower() : null);
             int gold = -1;
 
-            Map map = null;
             if (cost > 0)
             {
                 gold = GameUtils.FindThings(ThingDefOf.Gold, 0, false);

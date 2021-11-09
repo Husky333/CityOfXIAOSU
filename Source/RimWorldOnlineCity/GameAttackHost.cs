@@ -596,7 +596,6 @@ namespace RimWorldOnlineCity
                 {
                     try
                     {
-                        HashSet<int> mapPawnsId;
                         AttackHostFromSrv toClient;
                         lock (ToSendListsSync)
                         {
@@ -1232,6 +1231,7 @@ namespace RimWorldOnlineCity
                 ApplyAttackingPawnJob(pawn);
 
             }
+            #pragma warning disable CS0168
             catch (Exception exp)
             {
                 //if (MainHelper.DebugMode && pawn.Label == "Douglas, Клерк") Loger.Log("HostAttackUpdate UIEventNewJob " + exp.ToString());

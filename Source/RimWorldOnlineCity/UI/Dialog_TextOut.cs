@@ -13,7 +13,6 @@ namespace RimWorldOnlineCity
     public class Dialog_TextOut : Window
     {
         private TextBox PrintBox = new TextBox();
-        private Vector2 ScrollPosition;
 
         public bool ResultOK = false;
         public Action PostCloseAction;

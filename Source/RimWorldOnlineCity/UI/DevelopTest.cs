@@ -56,8 +56,6 @@ namespace RimWorldOnlineCity
                 : Restricted.ToStringRestrictedShort(o, ExcludeTypes);
         }
 
-        private static int tttt;
-
         public bool Run()
         {
             return false;
@@ -265,7 +263,7 @@ namespace RimWorldOnlineCity
             Log.Error(e.ToString());
         }
         */
-            return true;
+            //return true;
         }
     }
 
@@ -382,6 +380,7 @@ namespace RimWorldOnlineCity
                         break;
                 }
             }
+            #pragma warning disable CS0168
             catch (Exception e)
             {
                 //Debug.Log("Failed to Load Assembly" + e.Message);

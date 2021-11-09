@@ -19,6 +19,7 @@ namespace GameClasses
 		private sealed class c
 		{
 			public static readonly OCFactionManager.c c9 = new OCFactionManager.c();
+			#pragma warning disable CS0649
 			public static Func<Faction, string> c9__5_0;
 
 			internal string b__5_0(Faction fac)
