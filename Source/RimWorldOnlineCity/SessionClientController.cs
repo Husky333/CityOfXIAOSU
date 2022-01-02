@@ -1169,6 +1169,10 @@ namespace RimWorldOnlineCity
             //list.Add(new Page_SelectStoryteller());
             //list.Add(new Page_CreateWorldParams());
             list.Add(new Page_SelectStartingSite());
+            if (ModsConfig.IdeologyActive)
+            {
+                list.Add(new Page_ChooseIdeoPreset());
+            }
             list.Add(new Page_ConfigureStartingPawns());
             Page page = PageUtility.StitchedPages(list);
             if (page != null)

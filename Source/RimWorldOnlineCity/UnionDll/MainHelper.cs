@@ -20,7 +20,7 @@ namespace OCUnion
         public static bool OffAllLog = false;
 
         //public static string VersionInfo = $"Version {Assembly.GetExecutingAssembly().FullName}";
-        public static string VersionInfo = "Version XIAOSU 1.0.2 based on 0.03.65a";
+        public static string VersionInfo = "Version XIAOSU 1.0.3 based on 0.03.65a";
 
         public static bool DisableModSettingsInMainMenu = true;
 
@@ -36,7 +36,7 @@ namespace OCUnion
 
         public static bool EnableServerTradeship = true;
 
-        public static string ServerTradeshipName = "服务器商船";
+        public static string ServerTradeshipName = "PublicTradeShip";
 
         public static string DefaultIP = DebugMode ? "localhost" : "rimworld.online"; // rimworld.online 194.87.95.90:19020
 
